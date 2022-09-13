@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.branda{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.8),rgba(4, 9, 30, 0.4)),url(img/home.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    margin-left: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;   
+}
+nav .menu{
+    flex: 1;
+    text-align: right;
+    margin-right: 30px;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 18px 12px;
+    position: relative;
+    transition: 0.05s;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #fff;
+}
+.menu ul li:hover{
+    padding: 6px 15px;
+    background: #009688;
+    border-radius: 25px;
+}
+.cont-tex{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.cont-tex h2{
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.cont-tex p{
+    margin-bottom: 25px;
+}
+.btn{
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 2px solid #009688;
+    background: transparent;
+    border-radius: 25px;
+    color: #fff;
+}
+.btn:hover{
+    letter-spacing: 2px;
+}
+
+/* section class */
+.class{
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+.class h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 10px;
+}
+.card{
+    width: 480px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    align-items: center;
+    gap: 30;
+}
+.card .kotak{
+    width: 100%;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box .card .text{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+.bold{
+    font-weight: bold;
+}
+.box .card .btn-cls{
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 25px;
+    background: #009688;
+    color: #fff;
+}
+
+/* css gallery */
+.gallery{
+    width: 100%;
+    box-sizing: border-box;
+}
+.judul{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+.ju-text{
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.kot-gal{
+    width: 280px;
+    border-radius: 8px;
+    margin: 20px 12px;
+    transition: 0.5s;
+}
+.kot-gal:hover{
+    background: transparent;
+    box-shadow: 0 0 13px 0 #111;
+    padding: 5px;
+}
+.kot-gal img{
+    width: 100%;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* contact */
+.contact{
+    width: 100%;
+    height: 90%;
+    /* display: flex;
+    justify-content: enter;
+    align-items: center; */
+}
+.contact h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+form{
+    background: #009688;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    padding: 15px 20px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+form h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #fff;
+    font-size: 16px;
+}
+form .btn{
+    width: 150px;
+    text-align: center;
+    background: #009688;
+    padding: 10px 15px;
+    margin: 20px auto 0;
+    box-shadow: 0 0 30px 0 #111;
+}
+
+/* ---Footer--- */
+.footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #009688;
+    margin-top: 30px;
+}
+.foot-rw{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-rw .kot-foot{
+    width: 27px;
+    margin-right: 12px;
+}
+.kot-foot img{
+    width: 100%;
+    margin-top: 14px;
+    position: relative;
+    filter: invert(1);
+    opacity: 1;
+}
+.footer p{
+    margin-top: 10px;
+    margin-bottom: 12px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.text-foot p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 3px;
+    color: #fff;
+}
+.text-foot span{
+    font-style: italic;
+    color: #ddd;
+}
+
+
